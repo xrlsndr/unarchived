@@ -13,7 +13,7 @@ document.querySelectorAll('.carousel').forEach((carousel) => {
     currentIndex = Math.min(currentIndex, maxIndex);
     track.style.gridTemplateColumns = `repeat(${photos.length}, minmax(0, 1fr))`;
     track.style.width = `${(photos.length / visibleCount) * 100}%`;
-    track.style.transform = `translate3d(${-(currentIndex * (100 / visibleCount))}%, 0, 0)`;
+    track.style.transform = `translate3d(${-(currentIndex * (100 / photos.length))}%, 0, 0)`;
     previousButton.disabled = currentIndex === 0;
     nextButton.disabled = currentIndex === maxIndex;
   };
