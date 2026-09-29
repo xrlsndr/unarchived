@@ -55,7 +55,7 @@ a { color: inherit; }
 .wordmark, .signature { text-decoration: none; font-size: clamp(1.5rem, 2.5vw, 2.2rem); line-height: .9; }
 .signature { font-size: clamp(1.15rem, 2vw, 1.7rem); }
 
-.portfolio { padding: 2.75rem var(--pad) 0; }
+.portfolio { scroll-margin-top: 1.5rem; padding: 2.75rem var(--pad) 0; }
 .intro {
   display: grid;
   grid-template-columns: 1fr minmax(18rem, 34rem);
